@@ -1,0 +1,28 @@
+/dts-v1/;
+
+#include <rpi_pico/rp2040.dtsi>
+#include <dt-bindings/led/led.h>
+
+/ {
+    model = "Boardsource Blok";
+    compatible = "boardsource,blok";
+
+    chosen {
+        zephyr,sram = &sram0;
+        zephyr,flash = &flash0;
+        zephyr,console = &cdc_acm_uart;
+        zephyr,code-partition = &code_partition;
+        zmk,kscan = &kscan0;
+    };
+};
+
+&spi0 {
+    status = "okay";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-names = "default";
+
+    /* This establishes the SPI peripheral that the overlay can reference */
+    led_strip: ws2812@0 {
+        status = "disabled";  /* The overlay will enable this */
+    };
+};

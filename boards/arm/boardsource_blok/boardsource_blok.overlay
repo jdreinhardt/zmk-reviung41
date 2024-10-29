@@ -1,5 +1,11 @@
 #include <dt-bindings/led/led.h>
 
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+};
+
 &spi0 {
     compatible = "raspberrypi,pico-spi", "arm,pl022";
     status = "okay";
@@ -21,11 +27,5 @@
         color-mapping = <LED_COLOR_ID_GREEN 
                         LED_COLOR_ID_RED 
                         LED_COLOR_ID_BLUE>;
-    };
-};
-
-/ {
-    chosen {
-        zmk,underglow = &led_strip;
     };
 };
