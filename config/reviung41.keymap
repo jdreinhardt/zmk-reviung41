@@ -89,7 +89,7 @@
    &tdesc    &kp Q      &kp W      &kp E       &kp R  &kp T    &kp Y  &kp U  &kp I           &kp O        &kp P         &kp BSPC
    &kp TAB   &kp A      &kp S      &kp D       &kp F  &kp G    &kp H  &kp J  &kp K           &kp L        &kp SEMI      &kp APOS
    &kp LSHFT &hm LALT Z &hm LGUI X &hm LCTRL C &kp V  &kp B    &kp N  &kp M  &hm RCTRL COMMA &hm RGUI DOT &hm RALT FSLH &hm RSHFT BSLH
-                               &kp LGUI &mo _L_SYM    &kp SPACE   &lt _L_FUN RET &kp LALT
+                              &kp LGUI &lt _L_SYM BSPC   &kp SPACE   &lt _L_FUN RET &kp LALT
                         >;
                 };
 
@@ -101,10 +101,10 @@
 // | SHFT |  Z  |  X  |  C  |  D   |  V  |   |  K   |  H   |  ,  |  .  |  /  |  \   |
 //                    | GUI | CTRL | SPC |   | SHFT | BSPC | ALT |
                         bindings = <
-   &tdesc    &kp Q      &kp W      &kp F       &kp P       &kp B   &kp J &kp L       &kp U       &kp Y      &kp SEMI   &kp BSPC
-   &kp TAB   &hm LALT A &hm LGUI R &hm LCTRL S &hm LSHFT T &kp G   &kp M &hm RSHFT N &hm RCTRL E &hm RGUI I &hm RALT O &kp APOS
-   &kp LSHFT &kp Z      &kp X      &kp C       &kp D       &kp V   &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH   &kp BSLH
-                                     &kp TAB &mo _L_SYM   &kp SPACE  &lt _L_FUN RET &kp LGUI
+   &tdesc    &kp Q      &kp W      &kp F       &kp P  &kp B   &kp J &kp L  &kp U           &kp Y        &kp SEMI      &kp BSPC
+   &kp TAB   &kp A      &kp R      &kp S       &kp T  &kp G   &kp M &kp N  &kp E           &kp I        &kp O         &kp APOS
+   &kp LSHFT &hm LALT Z &hm LGUI X &hm LCTRL C &kp D  &kp V   &kp K &kp H  &hm RCTRL COMMA &hm RGUI DOT &hm RALT FSLH &hm RSHFT BSLH
+                              &kp LGUI &lt _L_SYM BSPC   &kp SPACE  &lt _L_FUN RET &kp LALT
                         >;
                 };
 
